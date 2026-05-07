@@ -28,7 +28,9 @@ Information about WCAG compliance and accessibility features.
 
 ## How to Contact Us
 
-- (No contact details configured yet.)
+- Email: matchajobsil@gmail.com
+- Phone: +972503995540
+- Phone (tel): tel:+972503995540
 
 ### Contact form
 - URL: https://example.com
