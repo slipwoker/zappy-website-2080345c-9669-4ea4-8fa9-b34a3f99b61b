@@ -1,0 +1,68 @@
+# Matcha Jobs — Generative Engine Optimization Map
+
+> Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults in the hospitality, café, restaurant, retail and service sectors. The brand identity is built around simplicity, speed, and personal connection — feeling approachable and trustworthy rather than corporate. The matcha green palette reinforces a fresh, energetic vibe. The platform prioritizes WhatsApp-first communication and conversion-focused UX, with a clean RTL Hebrew interface that feels fast, minimal, and human.
+
+---
+
+## Pages
+
+### בית
+https://matcha-jobs-2080345c.zappy5.app
+Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults
+
+## Legal & Policy
+
+### Privacy Policy
+https://matcha-jobs-2080345c.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://matcha-jobs-2080345c.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://matcha-jobs-2080345c.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## How to Contact Us
+
+- (No contact details configured yet.)
+
+### Contact form
+- URL: https://matcha-jobs-2080345c.zappy5.app
+- Endpoint: https://matcha-jobs-2080345c.zappy5.app/api/email/contact-form
+- Method: POST
+- Content-Type: application/json
+- Fields:
+  - `full_name` (text, required)
+  - `email` (email, required)
+  - `phone` (tel, required)
+  - `message` (textarea)
+  - `privacy_consent` (checkbox, required)
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Matcha Jobs
+Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults in the hospitality, café, restaurant, retail and service sectors. The brand identity is built around simplicity, speed, and personal connection — feeling approachable and trustworthy rather than corporate. The matcha green palette reinforces a fresh, energetic vibe. The platform prioritizes WhatsApp-first communication and conversion-focused UX, with a clean RTL Hebrew interface that feels fast, minimal, and human.
+
+## Target Audience
+- 70% job seekers (young adults, released soldiers, students, graduates in hospitality, cafés, restaurants, retail, service) and 30% businesses looking to hire employees
+- מחפשי עבודה צעירים
+- בוגרי תחום השירות
+- עסקים מגייסים
+- מחפשי משרות חלקיות
+
+## Industry
+recruitment & employment
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://matcha-jobs-2080345c.zappy5.app/sitemap.xml
+- Robots: https://matcha-jobs-2080345c.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://matcha-jobs-2080345c.zappy5.app/llms-full.txt
