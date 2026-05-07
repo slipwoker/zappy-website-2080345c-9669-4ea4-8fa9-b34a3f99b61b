@@ -6228,6 +6228,14 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .navbar.scrolled .login-link.nav-login {
   color: #F8FCF7 !important;
 }
+
+.index-contact-section .index-contact-section__intro h2:first-of-type {
+  color: var(--primary-color);
+  text-shadow: 0 0 8px rgba(91, 203, 118, 0.9),
+    0 0 20px rgba(91, 203, 118, 0.65),
+    0 0 45px rgba(91, 203, 118, 0.4),
+    0 0 80px rgba(91, 203, 118, 0.2);
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
