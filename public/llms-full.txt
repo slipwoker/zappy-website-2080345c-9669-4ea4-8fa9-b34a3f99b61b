@@ -201,7 +201,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 
 
 
-פרטים ומועמדות
+השאר פרטים בוואטסאפ
 
 
 
@@ -232,7 +232,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 
 
 
-פרטים ומועמדות
+השאר פרטים בוואטסאפ
 
 
 
@@ -263,7 +263,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 
 
 
-פרטים ומועמדות
+השאר פרטים בוואטסאפ
 
 
 
@@ -294,7 +294,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 
 
 
-פרטים ומועמדות
+השאר פרטים בוואטסאפ
 
 
 
@@ -326,7 +326,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 
 
 
-פרטים ומועמדות
+השאר פרטים בוואטסאפ
 
 
 
@@ -357,7 +357,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 
 
 
-פרטים ומועמדות
+השאר פרטים בוואטסאפ
 
 
 
@@ -399,7 +399,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 ## השאר פרטים ונחזור אליך!
 
 
-השאירו פרטים קצרים ואנחנו נחזור אליכם בהקדם. כל התקשורת ממשיכה בוואטסאפ — מהיר, נוח, ואישי.
+השאירו פרטים קצרים ואנחנו נחזור אליכם בהקדם. כל התקשורת ממשיכה בוואטסאפ - מהיר, נוח, ואישי.
 
 - מענה מהיר — בדרך כלל תוך שעה
 - ליווי אישי לכל אורך התהליך
@@ -469,9 +469,10 @@ This field is required.
 
 
 
+
 למה Matcha Jobs?
 
-## גיוס שעובד בשבילכם —מהיר, אנושי, ואמיתי
+## גיוס שעובד בשבילכם -מהיר, אנושי, ואמיתי
 
 
 בין אם אתם מחפשים עבודה לצעירים בתחום השירות, או עסק שצריך עובדים מחר בבוקר — אנחנו כאן בשבילכם.
@@ -481,18 +482,18 @@ This field is required.
 
 
 
-48
+72
 שע׳
 ממוצע זמן גיוס
 
 
 
-2,400+
+200+
 מועמדים פעילים
 
 
 
-98%
+100%
 שביעות רצון מעסיקים
 
 
@@ -577,9 +578,7 @@ This field is required.
 
 
 
-
 דברו איתנו בוואטסאפ
-
 
 
 
