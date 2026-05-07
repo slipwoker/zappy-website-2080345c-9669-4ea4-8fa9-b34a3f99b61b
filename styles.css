@@ -6248,6 +6248,51 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   cursor: pointer !important;
   pointer-events: auto !important;
 }
+
+@media (max-width: 768px) {
+.index-hero-section .index-hero-container {
+  padding: 0 20px 48px !important;
+}
+
+.index-hero-section .index-hero-overlay-group {
+  max-width: 100% !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.index-hero-section .index-hero-headline {
+  text-align: center !important;
+}
+
+.index-hero-section .index-hero-subtitle {
+  text-align: center !important;
+}
+
+.index-hero-section .index-hero-ctas {
+  justify-content: center !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100% !important;
+}
+
+.index-hero-section .index-hero-btn-primary,
+  .index-hero-section .index-hero-btn-whatsapp {
+  width: 100% !important;
+  justify-content: center !important;
+}
+
+.index-hero-section .index-hero-trust {
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  text-align: center !important;
+}
+
+.index-hero-section .index-hero-brush {
+  align-self: center !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
