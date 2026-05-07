@@ -2,13 +2,13 @@
 
 Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults in the hospitality, café, restaurant, retail and service sectors. The brand identity is built around simplicity, speed, and personal connection — feeling approachable and trustworthy rather than corporate. The matcha green palette reinforces a fresh, energetic vibe. The platform prioritizes WhatsApp-first communication and conversion-focused UX, with a clean RTL Hebrew interface that feels fast, minimal, and human.
 
-Source: https://matcha-jobs.zappy5.app
+Source: https://matcha-jobs.co.il
 
 ---
 
 ## דרושים - Matcha Jobs
 
-URL: https://matcha-jobs.zappy5.app
+URL: https://matcha-jobs.co.il
 Description: Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults
 
 דרושים - Matcha Jobs
@@ -905,13 +905,11 @@ This field is required.
 
 נגישות
 
-נוצר באמצעות Zappy
-
 ---
 
 ## מדיניות פרטיות
 
-URL: https://matcha-jobs.zappy5.app/privacy
+URL: https://matcha-jobs.co.il/privacy
 Description: מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם
 
 מדיניות פרטיות
@@ -1167,13 +1165,11 @@ Matcha Jobs ("החברה", "אנו", "שלנו") מחויבת להגן על פר
 
 נגישות
 
-נוצר באמצעות Zappy
-
 ---
 
 ## הצהרת נגישות
 
-URL: https://matcha-jobs.zappy5.app/accessibility
+URL: https://matcha-jobs.co.il/accessibility
 Description: הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית
 
 הצהרת נגישות
@@ -1438,13 +1434,11 @@ Matcha Jobs מחויבת להנגיש את השירותים לכלל הציבו�
 
 נגישות
 
-נוצר באמצעות Zappy
-
 ---
 
 ## תנאי שימוש
 
-URL: https://matcha-jobs.zappy5.app/terms
+URL: https://matcha-jobs.co.il/terms
 Description: תנאי השימוש באתר - הזכויות והחובות של המשתמשים
 
 תנאי שימוש
@@ -1727,8 +1721,6 @@ Matcha Jobs מספקת recruitment & employment דרך האתר. השירותי�
 תנאי שימוש
 
 נגישות
-
-נוצר באמצעות Zappy
 
 ---
 

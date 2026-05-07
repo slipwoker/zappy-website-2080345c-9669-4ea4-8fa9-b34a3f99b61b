@@ -6302,6 +6302,10 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   transform-origin: center top;
 }
 }
+
+.footer-legal .footer-legal-sep:last-of-type {
+  display: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,

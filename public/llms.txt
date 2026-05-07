@@ -7,21 +7,21 @@
 ## Pages
 
 ### בית
-https://matcha-jobs.zappy5.app
+https://matcha-jobs.co.il
 Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://matcha-jobs.zappy5.app/privacy
+https://matcha-jobs.co.il/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://matcha-jobs.zappy5.app/terms
+https://matcha-jobs.co.il/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://matcha-jobs.zappy5.app/accessibility
+https://matcha-jobs.co.il/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -34,8 +34,8 @@ Information about WCAG compliance and accessibility features.
 - Address: תל אביב
 
 ### Contact form
-- URL: https://matcha-jobs.zappy5.app
-- Endpoint: https://matcha-jobs.zappy5.app/api/email/contact-form
+- URL: https://matcha-jobs.co.il
+- Endpoint: https://matcha-jobs.co.il/api/email/contact-form
 - Method: POST
 - Content-Type: application/json
 - Fields:
@@ -66,6 +66,6 @@ recruitment & employment
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://matcha-jobs.zappy5.app/sitemap.xml
-- Robots: https://matcha-jobs.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://matcha-jobs.zappy5.app/llms-full.txt
+- Sitemap (XML): https://matcha-jobs.co.il/sitemap.xml
+- Robots: https://matcha-jobs.co.il/robots.txt
+- Flattened page text (for LLMs): https://matcha-jobs.co.il/llms-full.txt
