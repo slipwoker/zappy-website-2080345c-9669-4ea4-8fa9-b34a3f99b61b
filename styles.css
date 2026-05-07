@@ -6295,6 +6295,13 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   margin-left: auto !important;
 }
 }
+
+@media (max-width: 768px) {
+.index-hero-section .index-hero-bg img {
+  transform: scale(0.55);
+  transform-origin: center top;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
