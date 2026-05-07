@@ -31,6 +31,7 @@ Information about WCAG compliance and accessibility features.
 - Email: matchajobsil@gmail.com
 - Phone: +972503995540
 - Phone (tel): tel:+972503995540
+- Address: תל אביב
 
 ### Contact form
 - URL: https://example.com
