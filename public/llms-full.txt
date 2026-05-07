@@ -411,9 +411,10 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 
 
 
-שם מלא
+שם מלא  *
 
-This field is required.
+נא להזין שם מלא.
+
 
 
 אימייל
@@ -421,8 +422,9 @@ This field is required.
 
 
 
-טלפון
+טלפון  *
 
+נא להזין מספר טלפון.
 
 
 
