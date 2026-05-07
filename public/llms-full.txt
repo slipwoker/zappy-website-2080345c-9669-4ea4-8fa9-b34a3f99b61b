@@ -2,13 +2,13 @@
 
 Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults in the hospitality, café, restaurant, retail and service sectors. The brand identity is built around simplicity, speed, and personal connection — feeling approachable and trustworthy rather than corporate. The matcha green palette reinforces a fresh, energetic vibe. The platform prioritizes WhatsApp-first communication and conversion-focused UX, with a clean RTL Hebrew interface that feels fast, minimal, and human.
 
-Source: https://example.com
+Source: https://matcha-jobs.zappy5.app
 
 ---
 
 ## דרושים — Matcha Jobs
 
-URL: https://example.com
+URL: https://matcha-jobs.zappy5.app
 Description: Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults
 
 דרושים — Matcha Jobs
@@ -918,7 +918,7 @@ This field is required.
 
 ## מדיניות פרטיות
 
-URL: https://example.com/privacy
+URL: https://matcha-jobs.zappy5.app/privacy
 Description: מדיניות הפרטיות שלנו - כיצד אנו אוספים, משתמשים ומגנים על המידע שלכם
 
 מדיניות פרטיות
@@ -1180,7 +1180,7 @@ Matcha Jobs ("החברה", "אנו", "שלנו") מחויבת להגן על פר
 
 ## הצהרת נגישות
 
-URL: https://example.com/accessibility
+URL: https://matcha-jobs.zappy5.app/accessibility
 Description: הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית
 
 הצהרת נגישות
@@ -1451,7 +1451,7 @@ Matcha Jobs מחויבת להנגיש את השירותים לכלל הציבו�
 
 ## תנאי שימוש
 
-URL: https://example.com/terms
+URL: https://matcha-jobs.zappy5.app/terms
 Description: תנאי השימוש באתר - הזכויות והחובות של המשתמשים
 
 תנאי שימוש
