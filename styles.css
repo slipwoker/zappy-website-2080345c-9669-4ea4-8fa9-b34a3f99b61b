@@ -6236,6 +6236,18 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
     0 0 45px rgba(91, 203, 118, 0.4),
     0 0 80px rgba(91, 203, 118, 0.2);
 }
+
+.index-hero-section .index-hero-btn-whatsapp,
+.index-showcase-section .btn-showcase-all,
+.index-cta-section .index-cta-btn--whatsapp,
+.index-cta-section .index-cta-employers-link,
+.site-footer .footer-cta-btn,
+.index-contact-section .index-contact-section__whatsapp-link {
+  display: inline-flex !important;
+  opacity: 1 !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
