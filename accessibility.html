@@ -223,7 +223,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="הצהרת נגישות">
     <meta name="twitter:description" content="הצהרת הנגישות שלנו - מחויבותנו לנגישות דיגיטלית">
-    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://matcha-jobs.co.il#organization","name":"Matcha Jobs - ההתאמה הנכונה","url":"https://matcha-jobs.co.il","description":"Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults in the hospitality, café, restaurant, retail and service sectors. The brand identity is built around simplicity, speed, and personal connection — feeling approachable and trustworthy rather than corporate. The matcha green palette reinforces a fresh, energetic vibe. The platform prioritizes WhatsApp-first communication and conversion-focused UX, with a clean RTL Hebrew interface that feels fast, minimal, and human.","address":{"@type":"PostalAddress","streetAddress":"תל אביב"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"matchajobsil@gmail.com","telephone":"+972503995540"}]},{"@type":"WebSite","@id":"https://matcha-jobs.co.il#website","url":"https://matcha-jobs.co.il","name":"Matcha Jobs - ההתאמה הנכונה","publisher":{"@id":"https://matcha-jobs.co.il#organization"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://matcha-jobs.co.il"},{"@type":"ListItem","position":2,"name":"Accessibility","item":"https://matcha-jobs.co.il/accessibility"}]}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LocalBusiness","@id":"https://matcha-jobs.co.il#organization","name":"Matcha Jobs - ההתאמה הנכונה","url":"https://matcha-jobs.co.il","description":"Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults in the hospitality, café, restaurant, retail and service sectors. The brand identity is built around simplicity, speed, and personal connection — feeling approachable and trustworthy rather than corporate. The matcha green palette reinforces a fresh, energetic vibe. The platform prioritizes WhatsApp-first communication and conversion-focused UX, with a clean RTL Hebrew interface that feels fast, minimal, and human.","address":{"@type":"PostalAddress","streetAddress":"תל אביב"},"contactPoint":[{"@type":"ContactPoint","contactType":"customer service","email":"matchajobsil@gmail.com","telephone":"+972503995540"}]},{"@type":"WebSite","@id":"https://matcha-jobs.co.il#website","url":"https://matcha-jobs.co.il","name":"Matcha Jobs - ההתאמה הנכונה","publisher":{"@id":"https://matcha-jobs.co.il#organization"},"potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://matcha-jobs.co.il/search?q={search_term_string}"},"query-input":"required name=search_term_string"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://matcha-jobs.co.il"},{"@type":"ListItem","position":2,"name":"Accessibility","item":"https://matcha-jobs.co.il/accessibility"}]}]}</script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     
@@ -339,7 +339,9 @@
 
   <a href="https://wa.me/972503995540" class="phone-header-btn" aria-label="WhatsApp" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;text-decoration:none;">
     <i class="fab fa-whatsapp" style="font-size: 22px; color: currentColor;"></i>
-  </a>
+  </a><button class="zappy-search-mobile-trigger" data-zappy-search-mobile-trigger="" aria-label="חיפוש">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+</button>
 
   <div class="nav-container">
     <div class="nav-right-group"><div class="nav-brand">
@@ -350,7 +352,17 @@
 
     
 
-    <div class="nav-cta-container">
+    <div class="nav-cta-container"><div class="zappy-search-container" id="zappy-search-container">
+  <button class="zappy-search-trigger" data-zappy-search-trigger="" aria-label="חיפוש">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+  </button>
+  <div class="zappy-search-expanded">
+    <svg class="zappy-search-exp-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
+    <input type="text" id="zappy-search-input" class="zappy-search-input" placeholder="חיפוש עבודה..." autocomplete="off">
+    <button class="zappy-search-close" aria-label="סגור חיפוש">×</button>
+  </div>
+  <div id="zappy-search-results" class="zappy-search-results"></div>
+</div>
       <a href="https://wa.me/972503995540" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="display:inline-flex;align-items:center;gap:7px;background:#25D366;color:#ffffff;font-family:'Heebo',sans-serif;font-size:0.82rem;font-weight:700;padding:7px 14px;border-radius:50px;text-decoration:none;white-space:nowrap;box-shadow:0 3px 10px rgba(37,211,102,0.35);transition:background 0.2s,transform 0.2s;margin-inline-end:10px;" onmouseover="this.style.background='#1ebe5d';this.style.transform='translateY(-1px)'" onmouseout="this.style.background='#25D366';this.style.transform='translateY(0)'">
         <i class="fab fa-whatsapp" style="font-size:15px;"></i>
         <span>וואטסאפ</span>
@@ -366,7 +378,15 @@
       <li class="nav-cta-item"><a href="/#cta" class="nav-cta-btn">צור קשר</a></li>
     </div>
   </div>
-</nav>
+</nav><div class="zappy-search-mobile-bar" id="zappy-search-mobile-bar">
+  <div class="zappy-search-mobile-wrapper">
+    <input type="text" id="zappy-search-mobile-input" class="zappy-search-mobile-input" placeholder="חיפוש עבודה..." autocomplete="off">
+    <button class="zappy-search-mobile-close" aria-label="סגור חיפוש">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"></path></svg>
+    </button>
+  </div>
+  <div id="zappy-search-mobile-results" class="zappy-search-mobile-results"></div>
+</div>
     <main>
     <section class="legal-page-content accessibility-statement" id="zappy-section-0">
   <div class="container">
