@@ -6775,6 +6775,29 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   object-position: 65% center !important;
 }
 }
+
+html, body {
+  max-width: 100% !important;
+  overflow-x: clip !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: var(--bg-dark) !important;
+}
+
+.index-hero-section {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.index-hero-section .index-hero-bg,
+.index-hero-section .index-hero-bg > div,
+.index-hero-section .index-hero-bg img {
+  width: 100% !important;
+  max-width: 100% !important;
+  transform: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
