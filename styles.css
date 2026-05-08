@@ -6823,6 +6823,63 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   align-self: center;
 }
 }
+
+.index-hero-section .index-hero-btn-primary {
+  font-size: 0.82rem !important;
+  padding: 9px 20px !important;
+  gap: 6px !important;
+}
+
+.footer-cta-btn {
+  font-size: 0.76rem !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.index-showcase-section .btn-job-cta-new {
+  font-size: 0.78rem !important;
+  padding: 8px 16px !important;
+  gap: 5px !important;
+}
+
+.index-showcase-section .btn-showcase-all {
+  font-size: 0.82rem !important;
+  padding: 9px 20px !important;
+  gap: 6px !important;
+}
+
+.index-contact-section .index-contact-section__whatsapp-link {
+  font-size: 0.82rem !important;
+  padding: 8px 16px !important;
+  gap: 6px !important;
+}
+
+.index-contact-section .index-contact-section__cta-band a {
+  font-size: 0.82rem !important;
+  padding: 9px 18px !important;
+}
+
+.index-contact-section .index-contact-section__submit-btn {
+  font-size: 0.9rem !important;
+  padding: 11px 24px !important;
+}
+
+.index-benefits-section .index-benefits-section__whatsapp-btn {
+  font-size: 0.82rem !important;
+  padding: 10px 20px !important;
+  gap: 7px !important;
+}
+
+.index-cta-section .index-cta-btn--whatsapp {
+  font-size: 0.85rem !important;
+  padding: 10px 22px !important;
+  gap: 7px !important;
+}
+
+.index-cta-section .index-cta-btn--outline {
+  font-size: 0.85rem !important;
+  padding: 10px 22px !important;
+  gap: 7px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
