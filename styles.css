@@ -6866,9 +6866,71 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 /* === BUTTON TEXT OVERRIDES END === */
 
 
-@media (max-width: 768px) {
+.navbar {
+  background: linear-gradient(180deg, rgba(23,32,27,0.85) 0%, rgba(23,32,27,0.0) 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.index-hero-section {
+  padding-top: 70px;
+}
+
+@media screen and (max-width: 768px) {
+.navbar {
+  background: linear-gradient(180deg, rgba(23,32,27,0.9) 0%, rgba(23,32,27,0.0) 100%) !important;
+}
+
+.index-hero-section {
+  padding-top: 70px !important;
+  align-items: flex-end !important;
+  padding-bottom: 60px !important;
+}
+
 .index-hero-section .index-hero-bg img {
-  object-position: 50% 15% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.index-hero-section .index-hero-overlay-group {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.index-hero-section .index-hero-headline {
+  font-size: 2rem !important;
+  line-height: 1.2 !important;
+}
+
+.index-hero-section .index-hero-ctas {
+  flex-direction: column !important;
+  width: 100% !important;
+  gap: 10px !important;
+}
+
+.index-hero-section .index-hero-btn-primary {
+  width: 100% !important;
+  justify-content: center !important;
+  padding: 14px 20px !important;
+}
+
+.index-hero-section .index-hero-trust {
+  flex-wrap: wrap !important;
+  gap: 8px 4px !important;
+}
+}
+
+@media screen and (max-width: 390px) {
+.index-hero-section .index-hero-headline {
+  font-size: 1.75rem !important;
+}
+
+.index-hero-section .index-hero-subtitle {
+  font-size: 0.95rem !important;
 }
 }
 /* mobile-submenu-overflow-fix */
