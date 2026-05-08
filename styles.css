@@ -6520,6 +6520,53 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   grid-template-columns: 1fr !important;
 }
 }
+
+.index-showcase-section #showcaseAdvancedFilter {
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  padding-bottom: 8px !important;
+  gap: 12px !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter::-webkit-scrollbar {
+  display: none !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group {
+  flex-shrink: 0 !important;
+  min-width: 0 !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group > div {
+  flex-wrap: nowrap !important;
+  overflow-x: auto !important;
+  padding-bottom: 4px !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group > div::-webkit-scrollbar {
+  display: none !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-btn {
+  flex-shrink: 0 !important;
+}
+
+@media (max-width: 768px) {
+.index-showcase-section #showcaseAdvancedFilter {
+  flex-direction: column !important;
+  overflow-x: hidden !important;
+  gap: 10px !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group > div {
+  overflow-x: auto !important;
+  flex-wrap: nowrap !important;
+}
+
+.index-showcase-section .adv-filter-divider {
+  display: none !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
