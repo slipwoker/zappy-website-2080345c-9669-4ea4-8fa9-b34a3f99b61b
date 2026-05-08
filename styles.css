@@ -6711,6 +6711,27 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   background: rgba(91,203,118,0.55) !important;
   border-radius: 4px !important;
 }
+
+.index-showcase-section #showcaseAdvancedFilter {
+  overflow: visible !important;
+}
+
+.index-showcase-section .adv-filter-scroll-row {
+  padding-inline-end: 32px !important;
+  padding-inline-start: 4px !important;
+  padding-top: 4px !important;
+  padding-bottom: 8px !important;
+  margin-inline-end: -8px !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group {
+  overflow: visible !important;
+  position: relative;
+}
+
+.index-showcase-section .adv-filter-group {
+  position: relative;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
