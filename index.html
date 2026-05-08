@@ -1305,6 +1305,23 @@
     </script>
 
     <!-- Advanced Filter Bar -->
+<style>
+.adv-filter-scroll-row {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: 4px;
+  cursor: grab;
+  user-select: none;
+  flex-wrap: nowrap;
+}
+.adv-filter-scroll-row::-webkit-scrollbar { display: none; }
+.adv-filter-scroll-row.is-dragging { cursor: grabbing; }
+</style>
 <div id="showcaseAdvancedFilter" style="
   display: flex;
   align-items: flex-start;
@@ -1314,47 +1331,47 @@
   justify-content: flex-start;
 ">
   <!-- Category Filter -->
-  <div class="adv-filter-group" style="display:flex;flex-direction:column;gap:8px;align-items:flex-start;">
+  <div class="adv-filter-group" style="display:flex;flex-direction:column;gap:8px;align-items:flex-start;width:100%;">
     <span style="font-family:'Heebo',sans-serif;font-size:0.78rem;font-weight:700;color:var(--text-muted);letter-spacing:0.05em;text-transform:uppercase;">תחום / תפקיד</span>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <button class="adv-filter-btn adv-filter-cat adv-active" data-cat="all" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--primary);background:var(--primary);color:#17201B;cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+    <div class="adv-filter-scroll-row" id="adv-cat-row">
+      <button class="adv-filter-btn adv-filter-cat adv-active" data-cat="all" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--primary);background:var(--primary);color:#17201B;cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         🧩 הכל
       </button>
-      <button class="adv-filter-btn adv-filter-cat" data-cat="cafe" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+      <button class="adv-filter-btn adv-filter-cat" data-cat="cafe" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         ☕ בתי קפה ומשקאות
       </button>
-      <button class="adv-filter-btn adv-filter-cat" data-cat="restaurant" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+      <button class="adv-filter-btn adv-filter-cat" data-cat="restaurant" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         🍕 מסעדנות
       </button>
-      <button class="adv-filter-btn adv-filter-cat" data-cat="retail" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+      <button class="adv-filter-btn adv-filter-cat" data-cat="retail" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         🏪 קמעונאות ולוגיסטיקה
       </button>
-      <button class="adv-filter-btn adv-filter-cat" data-cat="sales" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+      <button class="adv-filter-btn adv-filter-cat" data-cat="sales" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         💼 מכירות
       </button>
-</div>
+    </div>
   </div>
 
   <!-- Divider -->
   <div style="width:1px;height:60px;background:var(--border-light);align-self:center;flex-shrink:0;display:none;" class="adv-filter-divider"></div>
 
   <!-- City Filter -->
-  <div class="adv-filter-group" style="display:flex;flex-direction:column;gap:8px;align-items:flex-start;">
+  <div class="adv-filter-group" style="display:flex;flex-direction:column;gap:8px;align-items:flex-start;width:100%;">
     <span style="font-family:'Heebo',sans-serif;font-size:0.78rem;font-weight:700;color:var(--text-muted);letter-spacing:0.05em;text-transform:uppercase;">עיר / מיקום</span>
-    <div style="display:flex;gap:8px;flex-wrap:wrap;">
-      <button class="adv-filter-btn adv-filter-city adv-active" data-city="all" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--primary);background:var(--primary);color:#17201B;cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+    <div class="adv-filter-scroll-row" id="adv-city-row">
+      <button class="adv-filter-btn adv-filter-city adv-active" data-city="all" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--primary);background:var(--primary);color:#17201B;cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         📍 כל הערים
       </button>
-      <button class="adv-filter-btn adv-filter-city" data-city="petah-tikva" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+      <button class="adv-filter-btn adv-filter-city" data-city="petah-tikva" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         פתח תקווה
       </button>
-      <button class="adv-filter-btn adv-filter-city" data-city="kfar-saba" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+      <button class="adv-filter-btn adv-filter-city" data-city="kfar-saba" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         כפר סבא
       </button>
-      <button class="adv-filter-btn adv-filter-city" data-city="raanana" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+      <button class="adv-filter-btn adv-filter-city" data-city="raanana" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         רעננה
       </button>
-      <button class="adv-filter-btn adv-filter-city" data-city="other" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;">
+      <button class="adv-filter-btn adv-filter-city" data-city="other" style="font-family:'Heebo',sans-serif;font-size:0.88rem;font-weight:600;padding:8px 18px;border-radius:50px;border:1.5px solid var(--border-light);background:#fff;color:var(--text-dark);cursor:pointer;transition:all 0.18s ease;white-space:nowrap;flex-shrink:0;">
         אזורים נוספים
       </button>
     </div>
@@ -1363,6 +1380,48 @@
   <!-- Results count -->
   <div id="adv-filter-count" style="font-family:'Assistant',sans-serif;font-size:0.85rem;color:var(--text-muted);align-self:flex-end;padding-bottom:4px;"></div>
 </div>
+<script>
+(function() {
+  function makeDraggable(el) {
+    if (!el) return;
+    var isDown = false, startX, scrollLeft, dragMoved = false;
+    el.addEventListener('mousedown', function(e) {
+      isDown = true; dragMoved = false;
+      el.classList.add('is-dragging');
+      startX = e.pageX - el.offsetLeft;
+      scrollLeft = el.scrollLeft;
+    });
+    el.addEventListener('mouseleave', function() { isDown = false; el.classList.remove('is-dragging'); });
+    el.addEventListener('mouseup', function() { isDown = false; el.classList.remove('is-dragging'); });
+    el.addEventListener('mousemove', function(e) {
+      if (!isDown) return;
+      e.preventDefault();
+      dragMoved = true;
+      var x = e.pageX - el.offsetLeft;
+      el.scrollLeft = scrollLeft - (x - startX);
+    });
+    var touchStartX = 0, touchScrollLeft = 0;
+    el.addEventListener('touchstart', function(e) {
+      touchStartX = e.touches[0].pageX;
+      touchScrollLeft = el.scrollLeft;
+    }, { passive: true });
+    el.addEventListener('touchmove', function(e) {
+      var dx = touchStartX - e.touches[0].pageX;
+      el.scrollLeft = touchScrollLeft + dx;
+    }, { passive: true });
+    el.addEventListener('click', function(e) {
+      if (dragMoved) e.stopImmediatePropagation();
+    }, true);
+  }
+  function init() {
+    makeDraggable(document.getElementById('adv-cat-row'));
+    makeDraggable(document.getElementById('adv-city-row'));
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else { init(); }
+})();
+</script>
 
 <script>
 (function() {
