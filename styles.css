@@ -6765,6 +6765,16 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   content: none !important;
   background: none !important;
 }
+
+@media (max-width: 768px) {
+.index-hero-section .index-hero-bg img {
+  object-position: 65% center !important;
+}
+
+.index-hero-section .index-hero-bg > div {
+  object-position: 65% center !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
