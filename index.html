@@ -1364,38 +1364,6 @@
     'zappy-section-cafe': ['petah-tikva', 'raanana']
   };
 
-  function resetCityFilter() {
-    document.querySelectorAll('.adv-filter-city').forEach(function(b) {
-      b.classList.remove('adv-active');
-      b.style.background = '#fff';
-      b.style.color = 'var(--text-dark)';
-      b.style.borderColor = 'var(--border-light)';
-    });
-    var allCity = document.querySelector('.adv-filter-city[data-city="all"]');
-    if (allCity) {
-      allCity.classList.add('adv-active');
-      allCity.style.background = 'var(--primary)';
-      allCity.style.color = '#17201B';
-      allCity.style.borderColor = 'var(--primary)';
-    }
-  }
-
-  function resetCatFilter() {
-    document.querySelectorAll('.adv-filter-cat').forEach(function(b) {
-      b.classList.remove('adv-active');
-      b.style.background = '#fff';
-      b.style.color = 'var(--text-dark)';
-      b.style.borderColor = 'var(--border-light)';
-    });
-    var allCat = document.querySelector('.adv-filter-cat[data-cat="all"]');
-    if (allCat) {
-      allCat.classList.add('adv-active');
-      allCat.style.background = 'var(--primary)';
-      allCat.style.color = '#17201B';
-      allCat.style.borderColor = 'var(--primary)';
-    }
-  }
-
   function runFilter() {
     var activeCat  = (document.querySelector('.adv-filter-cat.adv-active')  || {}).getAttribute('data-cat')  || 'all';
     var activeCity = (document.querySelector('.adv-filter-city.adv-active') || {}).getAttribute('data-city') || 'all';
@@ -1418,42 +1386,35 @@
     if (countEl) countEl.textContent = visible + ' משרות נמצאו';
   }
 
+  function setActive(btn) {
+    btn.classList.add('adv-active');
+    btn.style.background = 'var(--primary)';
+    btn.style.color = '#17201B';
+    btn.style.borderColor = 'var(--primary)';
+  }
+
+  function setInactive(btn) {
+    btn.classList.remove('adv-active');
+    btn.style.background = '#fff';
+    btn.style.color = 'var(--text-dark)';
+    btn.style.borderColor = 'var(--border-light)';
+  }
+
   function initAdvFilter() {
-    // Category buttons — clicking a non-"all" category resets city to "כל הערים"
+    // Category buttons — independent from city filter
     document.querySelectorAll('.adv-filter-cat').forEach(function(btn) {
       btn.addEventListener('click', function() {
-        var wasActive = this.classList.contains('adv-active');
-        document.querySelectorAll('.adv-filter-cat').forEach(function(b) {
-          b.classList.remove('adv-active');
-          b.style.background = '#fff';
-          b.style.color = 'var(--text-dark)';
-          b.style.borderColor = 'var(--border-light)';
-        });
-        this.classList.add('adv-active');
-        this.style.background = 'var(--primary)';
-        this.style.color = '#17201B';
-        this.style.borderColor = 'var(--primary)';
-        // Reset city filter whenever a specific category is chosen (or "all" re-selected)
-        resetCityFilter();
+        document.querySelectorAll('.adv-filter-cat').forEach(setInactive);
+        setActive(this);
         runFilter();
       });
     });
 
-    // City buttons — clicking a non-"all" city resets category to "הכל"
+    // City buttons — independent from category filter
     document.querySelectorAll('.adv-filter-city').forEach(function(btn) {
       btn.addEventListener('click', function() {
-        document.querySelectorAll('.adv-filter-city').forEach(function(b) {
-          b.classList.remove('adv-active');
-          b.style.background = '#fff';
-          b.style.color = 'var(--text-dark)';
-          b.style.borderColor = 'var(--border-light)';
-        });
-        this.classList.add('adv-active');
-        this.style.background = 'var(--primary)';
-        this.style.color = '#17201B';
-        this.style.borderColor = 'var(--primary)';
-        // Reset category filter whenever a specific city is chosen (or "all" re-selected)
-        resetCatFilter();
+        document.querySelectorAll('.adv-filter-city').forEach(setInactive);
+        setActive(this);
         runFilter();
       });
     });
