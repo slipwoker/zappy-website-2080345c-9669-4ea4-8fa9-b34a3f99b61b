@@ -6907,6 +6907,359 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   background-color: transparent !important;
 }
 }
+
+.index-showcase-section .badge {
+  color: inherit !important;
+}
+
+.index-showcase-section .showcase-label {
+  color: var(--primary) !important;
+}
+
+.index-showcase-section .showcase-title-accent {
+  color: var(--primary) !important;
+}
+
+.index-showcase-section .showcase-subtitle {
+  color: var(--text-muted) !important;
+}
+
+.index-showcase-section .showcase-cta-note {
+  color: var(--text-muted) !important;
+}
+
+.index-showcase-section .meta-item {
+  color: var(--text-muted) !important;
+}
+
+.index-showcase-section .btn-job-cta-new {
+  color: #ffffff !important;
+}
+
+.index-showcase-section .strip-text {
+  color: var(--text-dark) !important;
+}
+
+.index-benefits-section .index-benefits-section__eyebrow {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__stat-number {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__stat-unit {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__stat-label {
+  color: var(--text-muted) !important;
+}
+
+.index-benefits-section .index-benefits-section__subtitle {
+  color: var(--text-muted) !important;
+}
+
+.index-benefits-section .index-benefits-section__card-text {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section .index-contact-section__subtext {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section .index-contact-section__reassurance {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section .index-contact-section__submit-btn {
+  color: var(--text-dark) !important;
+}
+
+.index-contact-section a[href="/terms"],
+.index-contact-section a[href="/privacy"] {
+  color: var(--primary) !important;
+}
+
+.index-testimonials-section .its-label {
+  color: var(--primary) !important;
+}
+
+.index-testimonials-section .its-title-accent {
+  color: var(--primary) !important;
+}
+
+.index-testimonials-section .its-subtitle {
+  color: var(--text-muted) !important;
+}
+
+.index-stats-section .index-stats-label {
+  color: var(--text-light) !important;
+}
+
+.index-stats-section .index-stats-numeral {
+  color: var(--text-light) !important;
+}
+
+.index-stats-section .index-stats-subtitle {
+  color: var(--text-muted) !important;
+}
+
+.navbar .logo-link {
+  color: unset !important;
+}
+
+.navbar .nav-menu > li > a {
+  color: unset !important;
+}
+
+.navbar .nav-menu > .nav-item > a {
+  color: unset !important;
+}
+
+.navbar .nav-link {
+  color: unset !important;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: unset !important;
+}
+
+.navbar a:not(.nav-cta-btn) {
+  color: unset !important;
+}
+
+.navbar .navbar-brand {
+  color: unset !important;
+}
+
+.navbar .navbar-brand a {
+  color: unset !important;
+}
+
+.navbar .dropdown-toggle {
+  color: unset !important;
+}
+
+.navbar .mobile-hamburger-btn {
+  color: unset !important;
+}
+
+.navbar .mobile-close-btn {
+  color: unset !important;
+}
+
+.navbar .dropdown-menu li a {
+  color: unset !important;
+}
+
+.navbar .dropdown-menu .dropdown-item {
+  color: unset !important;
+}
+
+.navbar .sub-menu a {
+  color: unset !important;
+}
+
+.navbar .sub-menu li a {
+  color: unset !important;
+}
+
+.navbar .nav-menu .sub-menu a {
+  color: unset !important;
+}
+
+.navbar .nav-menu .sub-menu li a {
+  color: unset !important;
+}
+
+.navbar .zappy-products-dropdown .sub-menu a {
+  color: unset !important;
+}
+
+nav.navbar .sub-menu li a {
+  color: unset !important;
+}
+
+.navbar .mobile-submenu-toggle {
+  color: unset !important;
+}
+
+.navbar .phone-header-btn {
+  color: unset !important;
+}
+
+.navbar .nav-search-input {
+  color: unset !important;
+}
+
+.navbar .nav-search-box .nav-search-input {
+  color: unset !important;
+}
+
+.navbar .nav-search-input::placeholder {
+  color: unset !important;
+}
+
+.navbar .nav-search-result-name {
+  color: unset !important;
+}
+
+.navbar .nav-search-result-item a {
+  color: unset !important;
+}
+
+.navbar .nav-search-result-price {
+  color: unset !important;
+}
+
+.navbar .nav-search-no-results {
+  color: unset !important;
+}
+
+.navbar .search-no-results {
+  color: unset !important;
+}
+
+.navbar .cart-link.nav-cart {
+  color: unset !important;
+}
+
+.navbar .login-link.nav-login {
+  color: unset !important;
+}
+
+.navbar .nav-search-toggle {
+  color: unset !important;
+}
+
+.navbar .search-toggle {
+  color: unset !important;
+}
+
+.navbar .cart-link.nav-cart svg {
+  color: unset !important;
+}
+
+.navbar .login-link.nav-login svg {
+  color: unset !important;
+}
+
+.navbar .nav-search-toggle svg {
+  color: unset !important;
+}
+
+.navbar .search-toggle svg {
+  color: unset !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-item {
+  color: unset !important;
+}
+
+.navbar.scrolled ~ .zappy-catalog-menu .catalog-menu-all {
+  color: unset !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-item {
+  color: unset !important;
+}
+
+.navbar.scrolled ~ #zappy-catalog-menu .catalog-menu-all {
+  color: unset !important;
+}
+
+.navbar.scrolled .nav-menu > li > a {
+  color: unset !important;
+}
+
+.navbar.scrolled .nav-menu > .nav-item > a {
+  color: unset !important;
+}
+
+.navbar.scrolled .nav-link {
+  color: unset !important;
+}
+
+.navbar.scrolled a:not(.nav-cta-btn) {
+  color: unset !important;
+}
+
+.navbar.scrolled .navbar-brand {
+  color: unset !important;
+}
+
+.navbar.scrolled .navbar-brand a {
+  color: unset !important;
+}
+
+.navbar.scrolled .dropdown-toggle {
+  color: unset !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn {
+  color: unset !important;
+}
+
+.navbar.scrolled .mobile-close-btn {
+  color: unset !important;
+}
+
+.navbar.scrolled .phone-header-btn {
+  color: unset !important;
+}
+
+.navbar.scrolled .mobile-toggle {
+  color: unset !important;
+}
+
+.navbar.scrolled .mobile-toggle svg {
+  color: unset !important;
+}
+
+.navbar.scrolled .mobile-hamburger-btn svg {
+  color: unset !important;
+}
+
+.navbar.scrolled .mobile-close-btn svg {
+  color: unset !important;
+}
+
+.navbar.scrolled .phone-header-btn svg {
+  color: unset !important;
+}
+
+.navbar.scrolled .navbar-brand svg {
+  color: unset !important;
+}
+
+.navbar.scrolled .logo-link svg {
+  color: unset !important;
+}
+
+.navbar.scrolled .nav-search-btn {
+  color: unset !important;
+}
+
+.navbar.scrolled .cart-link.nav-cart {
+  color: unset !important;
+}
+
+.navbar.scrolled .login-link.nav-login {
+  color: unset !important;
+}
+
+.navbar.scrolled .nav-search-toggle {
+  color: unset !important;
+}
+
+.navbar.scrolled .search-toggle {
+  color: unset !important;
+}
+
+.navbar .nav-menu.active li a {
+  color: unset !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
