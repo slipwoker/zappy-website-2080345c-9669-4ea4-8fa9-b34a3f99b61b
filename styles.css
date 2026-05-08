@@ -7260,6 +7260,227 @@ nav.navbar .sub-menu li a {
 .navbar .nav-menu.active li a {
   color: unset !important;
 }
+
+.index-hero-section .index-hero-eyebrow {
+  color: var(--primary-color) !important;
+}
+
+.index-hero-section .index-hero-headline {
+  color: #F8FCF7 !important;
+}
+
+.index-hero-section .index-hero-subtitle {
+  color: rgba(248,252,247,0.85) !important;
+}
+
+.index-hero-section .index-hero-trust-chip,
+.index-hero-section .index-hero-trust-chip span {
+  color: rgba(248,252,247,0.9) !important;
+}
+
+.index-showcase-section .strip-text {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .showcase-label {
+  color: var(--primary) !important;
+}
+
+.index-showcase-section .showcase-title-accent {
+  color: var(--primary) !important;
+}
+
+.index-showcase-section .showcase-subtitle {
+  color: var(--text-muted) !important;
+}
+
+.index-showcase-section .job-card-title {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .meta-item {
+  color: var(--text-muted) !important;
+}
+
+.index-showcase-section .badge {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .btn-job-cta-new {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .showcase-cta-note {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section .index-contact-section__subtext {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section .index-contact-section__reassurance {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section .privacy-consent-label a {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__eyebrow {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__subtitle {
+  color: var(--text-muted) !important;
+}
+
+.index-benefits-section .index-benefits-section__stat-number {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__stat-unit {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__stat-label {
+  color: var(--text-muted) !important;
+}
+
+.index-benefits-section .index-benefits-section__card-text {
+  color: var(--text-muted) !important;
+}
+
+.index-benefits-section .index-benefits-section__card--featured .index-benefits-section__card-text {
+  color: rgba(248,252,247,0.75) !important;
+}
+
+.index-benefits-section .index-benefits-section__card--featured .index-benefits-section__card-title {
+  color: #F8FCF7 !important;
+}
+
+.index-testimonials-section .its-label {
+  color: var(--primary) !important;
+}
+
+.index-testimonials-section .its-title-accent {
+  color: var(--primary) !important;
+}
+
+.index-testimonials-section .its-subtitle {
+  color: var(--text-muted) !important;
+}
+
+.index-stats-section .index-stats-numeral {
+  color: #F8FCF7 !important;
+}
+
+.index-stats-section .index-stats-label {
+  color: rgba(248,252,247,0.7) !important;
+}
+
+.index-stats-section .index-stats-subtitle {
+  color: rgba(248,252,247,0.75) !important;
+}
+
+.index-showcase-section .badge {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .showcase-label {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .showcase-title-accent {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .showcase-subtitle {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .showcase-cta-note {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .meta-item {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .btn-job-cta-new {
+  color: var(--text-dark) !important;
+}
+
+.index-showcase-section .strip-text {
+  color: var(--primary) !important;
+}
+
+.index-contact-section .index-contact-section__reassurance {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section .index-contact-section__submit-btn {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section a[href="/terms"] {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section a[href="/privacy"] {
+  color: var(--text-muted) !important;
+}
+
+.index-contact-section .index-contact-section__subtext {
+  color: var(--text-muted) !important;
+}
+
+.index-benefits-section .index-benefits-section__stat-number {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__stat-unit {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__stat-label {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__subtitle {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__card-text {
+  color: var(--primary) !important;
+}
+
+.index-benefits-section .index-benefits-section__eyebrow {
+  color: var(--text-muted) !important;
+}
+
+.index-testimonials-section .its-title-accent {
+  color: var(--primary) !important;
+}
+
+.index-testimonials-section .its-subtitle {
+  color: var(--primary) !important;
+}
+
+.index-testimonials-section .its-label {
+  color: var(--primary) !important;
+}
+
+.index-stats-section .index-stats-label {
+  color: #F8FCF7 !important;
+}
+
+.index-stats-section .index-stats-subtitle {
+  color: #F8FCF7 !important;
+}
+
+.index-stats-section .index-stats-numeral {
+  color: rgba(248,252,247,0.7) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
