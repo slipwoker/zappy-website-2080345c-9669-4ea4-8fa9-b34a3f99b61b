@@ -6567,6 +6567,103 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   display: none !important;
 }
 }
+
+.index-showcase-section #showcaseAdvancedFilter {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.index-showcase-section .adv-filter-divider {
+  width: 1px;
+  height: 60px;
+  background: var(--border-light);
+  align-self: center;
+  flex-shrink: 0;
+}
+
+.index-showcase-section .adv-filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.index-showcase-section .adv-filter-group > div {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.index-showcase-section .adv-filter-btn {
+  font-family: 'Heebo', sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 50px;
+  border: 1.5px solid var(--border-light);
+  background: #fff;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+
+.index-showcase-section .adv-filter-btn.adv-active {
+  background: var(--primary);
+  color: var(--background-color);
+  border-color: var(--primary);
+}
+
+@media (max-width: 768px) {
+.index-showcase-section #showcaseAdvancedFilter {
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: stretch;
+}
+
+.index-showcase-section .adv-filter-divider {
+  display: none !important;
+}
+
+.index-showcase-section .adv-filter-group {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.index-showcase-section .adv-filter-group > span {
+  font-size: 0.72rem;
+  margin-bottom: 2px;
+}
+
+.index-showcase-section .adv-filter-group > div {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 6px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+.index-showcase-section .adv-filter-group > div::-webkit-scrollbar {
+  display: none;
+}
+
+.index-showcase-section .adv-filter-btn {
+  font-size: 0.78rem;
+  padding: 6px 12px;
+  flex-shrink: 0;
+}
+
+.index-showcase-section #adv-filter-count {
+  font-size: 0.8rem;
+  align-self: flex-start;
+  padding: 0;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
