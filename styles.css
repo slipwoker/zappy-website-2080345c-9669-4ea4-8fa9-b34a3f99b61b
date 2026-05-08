@@ -6886,6 +6886,27 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   flex-shrink: 0 !important;
 }
 }
+
+@media (max-width: 768px) {
+.index-hero-section .index-hero-bg img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center center !important;
+  min-width: 100vw !important;
+}
+
+.index-hero-section .index-hero-bg {
+  left: 0 !important;
+  right: 0 !important;
+  width: 100% !important;
+  inset: 0 !important;
+}
+
+.index-hero-section {
+  background-color: transparent !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
