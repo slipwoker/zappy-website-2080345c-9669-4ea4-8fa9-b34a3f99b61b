@@ -189,7 +189,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 ### מנהלי משמרת ועובדים — בר מיצים
 
 
-קניון בלינסון, פתח תקווה
+פתח תקווה
 מנהל משמרת / עובד/ת להכנת מיצים
 משמרות בוקר וערב
 
@@ -220,7 +220,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 ### עובד/ת — חנות ירקות מובילה
 
 
-אזור השרון
+בית נחמיה ליד שוהם
 שכר גבוה במיוחד!
 ב׳–ו׳ | שישי עד 14:00
 
@@ -251,7 +251,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 ### מנהל מחסן / סדרן סחורה / קופאית
 
 
-אזור התעשייה, כפר סבא
+כפר סבא
 רשת מובילה למוצרי צריכה
 משרה מלאה בשעות היום
 
@@ -311,7 +311,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 
 
 
-### עובד/ת כללי — עסק בתחום המזון
+### עובד/ת כללי — סופרמרקט שכונתי
 
 
 כפר סבא
@@ -319,7 +319,7 @@ Description: Matcha Jobs is a young, modern Israeli recruitment brand with a sta
 א׳–ה׳ | משרה מלאה
 
 
-אווירה משפחתית ונעימה
+אופציה להתקדם לניהול
 עבודה יציבה לטווח ארוך
 צוות טוב ומקום שמעריך
 
