@@ -2597,8 +2597,8 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   object-fit: cover;
   object-position: center 20%;
   display: block;
-  transform: scale(0.75);
-  transform-origin: center top;
+  transform: scale(1);
+  transform-origin: center center;
 }
 
 /* ── Scrim Overlay ── */
