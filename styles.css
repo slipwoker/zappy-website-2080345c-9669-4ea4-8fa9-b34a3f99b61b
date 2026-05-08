@@ -6907,6 +6907,32 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   background-color: transparent !important;
 }
 }
+
+@media (max-width: 768px) {
+.index-hero-section .index-hero-headline {
+  color: var(--text-light) !important;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.55) !important;
+}
+
+.index-hero-section .index-hero-headline-accent {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #8FE3A4 100%) !important;
+  background-clip: text !important;
+  color: var(--primary-color) !important;
+}
+}
+
+@media (max-width: 768px) {
+.index-hero-section .index-hero-headline {
+  color: var(--text-light) !important;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.55) !important;
+}
+
+.index-hero-section .index-hero-headline .index-hero-headline-accent {
+  color: var(--primary-color) !important;
+  background: none !important;
+  background-clip: unset !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
