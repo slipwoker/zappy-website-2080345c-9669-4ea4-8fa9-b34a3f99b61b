@@ -1352,17 +1352,49 @@
 
 <script>
 (function() {
-  // City mapping per card id
+  // City mapping per card id — cards with multiple cities use an array
   var cityMap = {
-    'zappy-section-2':    'petah-tikva',
-    'zappy-section-3':    'other',
-    'zappy-section-4':    'kfar-saba',
-    'zappy-section-5':    'kfar-saba',
-    'zappy-section-6':    'kfar-saba',
-    'zappy-section-7':    'petah-tikva',
-    'zappy-section-pizza':'raanana',
-    'zappy-section-cafe': 'petah-tikva'
+    'zappy-section-2':    ['petah-tikva'],
+    'zappy-section-3':    ['other'],
+    'zappy-section-4':    ['kfar-saba'],
+    'zappy-section-5':    ['kfar-saba'],
+    'zappy-section-6':    ['kfar-saba'],
+    'zappy-section-7':    ['petah-tikva'],
+    'zappy-section-pizza':['raanana'],
+    'zappy-section-cafe': ['petah-tikva', 'raanana']
   };
+
+  function resetCityFilter() {
+    document.querySelectorAll('.adv-filter-city').forEach(function(b) {
+      b.classList.remove('adv-active');
+      b.style.background = '#fff';
+      b.style.color = 'var(--text-dark)';
+      b.style.borderColor = 'var(--border-light)';
+    });
+    var allCity = document.querySelector('.adv-filter-city[data-city="all"]');
+    if (allCity) {
+      allCity.classList.add('adv-active');
+      allCity.style.background = 'var(--primary)';
+      allCity.style.color = '#17201B';
+      allCity.style.borderColor = 'var(--primary)';
+    }
+  }
+
+  function resetCatFilter() {
+    document.querySelectorAll('.adv-filter-cat').forEach(function(b) {
+      b.classList.remove('adv-active');
+      b.style.background = '#fff';
+      b.style.color = 'var(--text-dark)';
+      b.style.borderColor = 'var(--border-light)';
+    });
+    var allCat = document.querySelector('.adv-filter-cat[data-cat="all"]');
+    if (allCat) {
+      allCat.classList.add('adv-active');
+      allCat.style.background = 'var(--primary)';
+      allCat.style.color = '#17201B';
+      allCat.style.borderColor = 'var(--primary)';
+    }
+  }
 
   function runFilter() {
     var activeCat  = (document.querySelector('.adv-filter-cat.adv-active')  || {}).getAttribute('data-cat')  || 'all';
@@ -1373,7 +1405,8 @@
     var visible = 0;
     cards.forEach(function(card) {
       var catOk  = activeCat  === 'all' || card.getAttribute('data-category') === activeCat;
-      var cityOk = activeCity === 'all' || cityMap[card.id] === activeCity;
+      var cities = cityMap[card.id] || [];
+      var cityOk = activeCity === 'all' || cities.indexOf(activeCity) !== -1;
       if (catOk && cityOk) {
         card.style.display = '';
         visible++;
@@ -1386,9 +1419,10 @@
   }
 
   function initAdvFilter() {
-    // Category buttons
+    // Category buttons — clicking a non-"all" category resets city to "כל הערים"
     document.querySelectorAll('.adv-filter-cat').forEach(function(btn) {
       btn.addEventListener('click', function() {
+        var wasActive = this.classList.contains('adv-active');
         document.querySelectorAll('.adv-filter-cat').forEach(function(b) {
           b.classList.remove('adv-active');
           b.style.background = '#fff';
@@ -1399,11 +1433,13 @@
         this.style.background = 'var(--primary)';
         this.style.color = '#17201B';
         this.style.borderColor = 'var(--primary)';
+        // Reset city filter whenever a specific category is chosen (or "all" re-selected)
+        resetCityFilter();
         runFilter();
       });
     });
 
-    // City buttons
+    // City buttons — clicking a non-"all" city resets category to "הכל"
     document.querySelectorAll('.adv-filter-city').forEach(function(btn) {
       btn.addEventListener('click', function() {
         document.querySelectorAll('.adv-filter-city').forEach(function(b) {
@@ -1416,6 +1452,8 @@
         this.style.background = 'var(--primary)';
         this.style.color = '#17201B';
         this.style.borderColor = 'var(--primary)';
+        // Reset category filter whenever a specific city is chosen (or "all" re-selected)
+        resetCatFilter();
         runFilter();
       });
     });
