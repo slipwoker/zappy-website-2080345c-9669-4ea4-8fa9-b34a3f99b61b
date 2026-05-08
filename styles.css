@@ -6676,6 +6676,41 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   width: 0;
   height: 0;
 }
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group {
+  position: relative !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  bottom: 6px;
+  right: 0;
+  width: 52px;
+  background: linear-gradient(to left, rgba(248,252,247,1) 25%, rgba(248,252,247,0) 100%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.index-showcase-section .adv-filter-scroll-row {
+  padding-bottom: 6px !important;
+}
+
+.index-showcase-section .adv-filter-scroll-row::-webkit-scrollbar {
+  display: block !important;
+  height: 4px !important;
+}
+
+.index-showcase-section .adv-filter-scroll-row::-webkit-scrollbar-track {
+  background: rgba(91,203,118,0.1) !important;
+  border-radius: 4px !important;
+}
+
+.index-showcase-section .adv-filter-scroll-row::-webkit-scrollbar-thumb {
+  background: rgba(91,203,118,0.55) !important;
+  border-radius: 4px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
