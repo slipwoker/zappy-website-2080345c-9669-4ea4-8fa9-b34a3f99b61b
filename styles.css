@@ -2602,7 +2602,7 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 20%;
   display: block;
   transform: none;
   transform-origin: center center;
@@ -6931,28 +6931,6 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 
 .index-hero-section .index-hero-subtitle {
   font-size: 0.95rem !important;
-}
-}
-
-@media (max-width: 768px) {
-.index-hero-section .index-hero-bg img {
-  object-fit: cover !important;
-  object-position: center top !important;
-  transform: none !important;
-  transform-origin: center top !important;
-  width: 100% !important;
-  height: 100% !important;
-  max-width: 100% !important;
-}
-
-.index-hero-section .index-hero-bg {
-  position: absolute !important;
-  inset: 0 !important;
-  overflow: hidden !important;
-}
-
-.index-hero-section {
-  min-height: 100svh !important;
 }
 }
 /* mobile-submenu-overflow-fix */
