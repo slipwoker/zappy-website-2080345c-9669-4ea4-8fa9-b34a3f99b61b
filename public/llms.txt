@@ -1,4 +1,4 @@
-# Matcha Jobs - ההתאמה הנכונה — Generative Engine Optimization Map
+# MATCHa Jobs - ההתאמה הנכונה — Generative Engine Optimization Map
 
 > Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults in the hospitality, café, restaurant, retail and service sectors. The brand identity is built around simplicity, speed, and personal connection — feeling approachable and trustworthy rather than corporate. The matcha green palette reinforces a fresh, energetic vibe. The platform prioritizes WhatsApp-first communication and conversion-focused UX, with a clean RTL Hebrew interface that feels fast, minimal, and human.
 
@@ -49,7 +49,7 @@ Information about WCAG compliance and accessibility features.
 
 # Business Context (for LLM understanding)
 
-## About Matcha Jobs - ההתאמה הנכונה
+## About MATCHa Jobs - ההתאמה הנכונה
 Matcha Jobs is a young, modern Israeli recruitment brand with a startup personality, targeting job seekers such as released soldiers, students, and young adults in the hospitality, café, restaurant, retail and service sectors. The brand identity is built around simplicity, speed, and personal connection — feeling approachable and trustworthy rather than corporate. The matcha green palette reinforces a fresh, energetic vibe. The platform prioritizes WhatsApp-first communication and conversion-focused UX, with a clean RTL Hebrew interface that feels fast, minimal, and human.
 
 ## Target Audience
