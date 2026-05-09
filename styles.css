@@ -6933,6 +6933,16 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   font-size: 0.95rem !important;
 }
 }
+
+.index-hero-section .index-hero-trust p.zappy-editable {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: contents !important;
+}
+
+.index-hero-section .index-hero-trust p.zappy-editable .index-hero-trust-chip {
+  display: inline-flex !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
