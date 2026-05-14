@@ -2862,8 +2862,8 @@ html[dir="rtl"] .footer-contact li > a { flex-direction: row !important; }
   }
 
   .index-hero-section .index-hero-bg img {
-    object-position: 65% center;
-  }
+  object-position: center center;
+}
 
   .index-hero-section .index-hero-scrim {
     background-image:
