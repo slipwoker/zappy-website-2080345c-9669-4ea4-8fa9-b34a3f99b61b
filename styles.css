@@ -7551,6 +7551,48 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 #showcase .job-card .job-card-title[style] {
   color: var(--background-color) !important;
 }
+
+.index-showcase-section .job-card-title {
+  font-size: 1.1rem !important;
+  font-weight: 800 !important;
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .meta-item {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .meta-item i {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .btn-job-cta-new {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .job-card {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .job-card-meta .meta-item {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .job-card-meta .meta-item i {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .tag.tag-green {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .tag.tag-coral {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .tag.tag-periwinkle {
+  color: var(--background-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
