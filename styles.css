@@ -7601,6 +7601,20 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   width: 100% !important;
 }
 }
+
+@media (max-width: 768px) {
+.index-showcase-section .showcase-grid {
+  grid-template-columns: 1fr !important;
+  --zappy-grid-cols: 1fr !important;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+.index-showcase-section .showcase-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+  --zappy-grid-cols: repeat(2, 1fr) !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
