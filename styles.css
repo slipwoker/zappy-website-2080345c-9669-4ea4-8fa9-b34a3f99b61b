@@ -7039,6 +7039,35 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-contact-section .index-benefits-section__eyebrow {
   color: var(--primary) !important;
 }
+
+.index-contact-section .index-contact-section__intro .index-benefits-section__eyebrow {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  font-size: 1.25rem !important;
+  font-weight: 800 !important;
+  color: var(--secondary) !important;
+  background: linear-gradient(135deg, rgba(91,203,118,0.18) 0%, rgba(91,203,118,0.08) 100%) !important;
+  border: 2px solid rgba(91,203,118,0.5) !important;
+  border-radius: 14px !important;
+  padding: 12px 22px !important;
+  letter-spacing: -0.01em !important;
+  text-transform: none !important;
+  margin-bottom: 16px !important;
+}
+
+.index-contact-section .index-contact-section__heading {
+  font-size: 2.2rem !important;
+  font-weight: 800 !important;
+  color: var(--secondary) !important;
+  line-height: 1.25 !important;
+  letter-spacing: -0.02em !important;
+  margin: 0 0 20px !important;
+}
+
+.index-contact-section .index-benefits-section__eyebrow {
+  color: var(--secondary) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
