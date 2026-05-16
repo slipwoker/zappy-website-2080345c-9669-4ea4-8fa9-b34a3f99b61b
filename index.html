@@ -1429,6 +1429,13 @@
 })();
 </script>
 
+<style>
+.job-card--hidden {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+</style>
 <script>
 (function() {
   // City mapping per card id — cards with multiple cities use an array
@@ -1458,10 +1465,11 @@
       var cities = cityMap[card.id] || [];
       var cityOk = activeCityValue === 'all' || cities.indexOf(activeCityValue) !== -1;
       if (catOk && cityOk) {
-        card.style.display = '';
+        card.classList.remove('job-card--hidden');
+        card.removeAttribute('style');
         visible++;
       } else {
-        card.style.display = 'none';
+        card.classList.add('job-card--hidden');
       }
     });
     var countEl = document.getElementById('adv-filter-count');
@@ -1530,8 +1538,10 @@
       else setInactive(btn);
     });
 
-    // Initial count
+    // Re-run filter after Zappy runtime settles (prevents runtime from resetting display)
     runFilter();
+    setTimeout(runFilter, 300);
+    setTimeout(runFilter, 800);
   }
 
   // Use window.load to guarantee DOM + Zappy runtime are fully ready
