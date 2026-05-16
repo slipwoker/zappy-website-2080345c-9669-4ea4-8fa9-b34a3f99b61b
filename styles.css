@@ -7922,6 +7922,10 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   opacity: 1 !important;
 }
 }
+
+.index-showcase-section #showcaseAdvancedFilter {
+  background: transparent !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
