@@ -7965,6 +7965,10 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-showcase-section .adv-filter-group > p span {
   font-weight: 700 !important;
 }
+
+.index-showcase-section .job-card .job-card-title {
+  font-weight: 700 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
