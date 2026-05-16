@@ -6321,6 +6321,7 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   margin-bottom: 32px;
   gap: 20px;
   row-gap: 16px;
+  background-color: #ffffff !important;
 }
 
 .index-showcase-section .adv-filter-group span:first-child {
@@ -7929,11 +7930,11 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 }
 
 .index-showcase-section #showcaseAdvancedFilter .adv-filter-group span {
-  color: var(--background-color) !important;
+  color: var(--text-muted) !important;
 }
 
 .index-showcase-section #showcaseAdvancedFilter #adv-filter-count {
-  color: rgba(255,255,255,0.7) !important;
+  color: var(--text-muted) !important;
 }
 
 .index-showcase-section #showcaseAdvancedFilter .adv-filter-scroll-row::after,
