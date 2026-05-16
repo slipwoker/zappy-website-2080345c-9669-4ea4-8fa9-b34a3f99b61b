@@ -7615,6 +7615,19 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   --zappy-grid-cols: repeat(2, 1fr) !important;
 }
 }
+
+.index-showcase-section .btn-job-cta-new {
+  white-space: normal !important;
+  text-align: center !important;
+  line-height: 1.4 !important;
+  padding: 12px 16px !important;
+  height: auto !important;
+  min-height: 44px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  word-break: break-word !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
