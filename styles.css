@@ -7593,6 +7593,14 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-showcase-section .tag.tag-periwinkle {
   color: var(--background-color) !important;
 }
+
+@media (max-width: 768px) {
+#zappy-section-2 .job-card-image-wrap [data-zappy-zoom-wrapper="true"],
+  #zappy-section-3 .job-card-image-wrap [data-zappy-zoom-wrapper="true"] {
+  height: 220px !important;
+  width: 100% !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
