@@ -7659,52 +7659,41 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 }
 }
 
-.index-showcase-section .showcase-grid,
-.index-showcase-section #zappy-auto-grid-1778187311848-lzzcxz {
-  min-width: 0 !important;
-  overflow: visible !important;
+.index-showcase-section .job-card {
+  cursor: default !important;
+  user-select: none !important;
 }
 
-.index-showcase-section .showcase-container {
-  overflow: visible !important;
-  box-sizing: border-box !important;
+.index-showcase-section .job-card .job-card-image-wrap,
+.index-showcase-section .job-card .job-card-body,
+.index-showcase-section .job-card .job-card-title,
+.index-showcase-section .job-card .job-card-meta,
+.index-showcase-section .job-card .job-card-tags,
+.index-showcase-section .job-card .tag,
+.index-showcase-section .job-card .meta-item {
+  pointer-events: none !important;
 }
 
-.index-showcase-section {
-  overflow: visible !important;
+.index-showcase-section .job-card .job-card-footer {
+  pointer-events: auto !important;
 }
 
-.index-showcase-section .showcase-grid {
-  grid-template-columns: 1fr !important;
-  display: grid !important;
-  width: 100% !important;
-  min-width: 0 !important;
+.index-showcase-section .job-card .btn-job-cta-new {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 2 !important;
 }
 
-.index-showcase-section .showcase-grid .job-card {
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
-  box-sizing: border-box !important;
+.index-showcase-section .job-card:hover {
+  transform: none !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08) !important;
 }
 
-.index-showcase-section .showcase-grid .job-card-image-wrap {
-  width: 100% !important;
-  overflow: hidden !important;
-}
-
-.index-showcase-section .showcase-grid .job-card-image-wrap img {
-  width: 100% !important;
-  height: auto !important;
-  max-width: 100% !important;
-  object-fit: cover !important;
-}
-
-.index-showcase-section .showcase-container {
-  padding-left: 12px !important;
-  padding-right: 12px !important;
-  box-sizing: border-box !important;
-  width: 100% !important;
+.index-showcase-section .job-card .btn-job-cta-new:hover,
+.index-showcase-section .job-card .btn-job-cta-new:active {
+  opacity: 0.88 !important;
+  transform: translateY(-1px) !important;
 }
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
