@@ -7035,6 +7035,10 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   align-self: flex-start !important;
 }
 }
+
+.index-contact-section .index-benefits-section__eyebrow {
+  color: var(--primary) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
