@@ -7948,6 +7948,14 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   display: none !important;
   content: none !important;
 }
+
+.index-showcase-section #showcaseAdvancedFilter {
+  background: linear-gradient(135deg, #F4FAF5 0%, #E8F5EB 100%) !important;
+  border: 1px solid rgba(91, 203, 118, 0.25) !important;
+  border-radius: 16px !important;
+  padding: 20px 24px !important;
+  margin-bottom: 32px !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
