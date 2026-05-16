@@ -7495,6 +7495,52 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-showcase-section .btn-job-cta-new {
   color: var(--text-light) !important;
 }
+
+.index-showcase-section .job-card-title {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .job-card-meta .meta-item {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .job-card-meta .meta-item i {
+  color: var(--primary-color) !important;
+}
+
+.index-showcase-section .tag.tag-green {
+  background-color: rgba(91, 203, 118, 0.40) !important;
+  color: var(--background-color) !important;
+  border: 1px solid rgba(91, 203, 118, 0.6) !important;
+}
+
+.index-showcase-section .tag.tag-coral {
+  background-color: rgba(255, 122, 89, 0.40) !important;
+  color: var(--background-color) !important;
+  border: 1px solid rgba(255, 122, 89, 0.6) !important;
+}
+
+.index-showcase-section .tag.tag-periwinkle {
+  background-color: rgba(99, 102, 241, 0.40) !important;
+  color: var(--background-color) !important;
+  border: 1px solid rgba(99, 102, 241, 0.6) !important;
+}
+
+.index-showcase-section .meta-item {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .meta-item i {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .btn-job-cta-new {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section .job-card {
+  color: var(--background-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
