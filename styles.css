@@ -7922,6 +7922,20 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   opacity: 1 !important;
 }
 }
+
+.index-showcase-section #showcaseAdvancedFilter {
+  background-color: #000000 !important;
+  border-radius: 14px;
+  padding: 20px 24px !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group span {
+  color: var(--background-color) !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter #adv-filter-count {
+  color: rgba(255,255,255,0.7) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
