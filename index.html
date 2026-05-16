@@ -1445,17 +1445,19 @@
     'zappy-section-rothschild': ['tel-aviv']
   };
 
+  // Store active state by group name, not by DOM class alone
+  var activeCatValue  = 'all';
+  var activeCityValue = 'all';
+
   function runFilter() {
-    var activeCat  = (document.querySelector('.adv-filter-cat.adv-active')  || {}).getAttribute('data-cat')  || 'all';
-    var activeCity = (document.querySelector('.adv-filter-city.adv-active') || {}).getAttribute('data-city') || 'all';
     var grid = document.getElementById('zappy-auto-grid-1778187311848-lzzcxz');
     if (!grid) return;
     var cards = grid.querySelectorAll('.job-card');
     var visible = 0;
     cards.forEach(function(card) {
-      var catOk  = activeCat  === 'all' || card.getAttribute('data-category') === activeCat;
+      var catOk  = activeCatValue  === 'all' || card.getAttribute('data-category') === activeCatValue;
       var cities = cityMap[card.id] || [];
-      var cityOk = activeCity === 'all' || cities.indexOf(activeCity) !== -1;
+      var cityOk = activeCityValue === 'all' || cities.indexOf(activeCityValue) !== -1;
       if (catOk && cityOk) {
         card.style.display = '';
         visible++;
@@ -1481,21 +1483,36 @@
     btn.style.borderColor = 'var(--border-light)';
   }
 
+  function getCatValue(btn) {
+    return btn.getAttribute('data-cat') || btn.getAttribute('data-filter') || 'all';
+  }
+
+  function getCityValue(btn) {
+    return btn.getAttribute('data-city') || 'all';
+  }
+
   function initAdvFilter() {
-    // Category buttons — independent from city filter
-    document.querySelectorAll('.adv-filter-cat').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        document.querySelectorAll('.adv-filter-cat').forEach(setInactive);
+    var catBtns  = document.querySelectorAll('.adv-filter-cat');
+    var cityBtns = document.querySelectorAll('.adv-filter-city');
+
+    // Category buttons
+    catBtns.forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        catBtns.forEach(setInactive);
         setActive(this);
+        activeCatValue = getCatValue(this);
         runFilter();
       });
     });
 
-    // City buttons — independent from category filter
-    document.querySelectorAll('.adv-filter-city').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        document.querySelectorAll('.adv-filter-city').forEach(setInactive);
+    // City buttons
+    cityBtns.forEach(function(btn) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        cityBtns.forEach(setInactive);
         setActive(this);
+        activeCityValue = getCityValue(this);
         runFilter();
       });
     });
@@ -1504,14 +1521,35 @@
     var div = document.querySelector('.adv-filter-divider');
     if (div && window.innerWidth > 768) div.style.display = 'block';
 
+    // Set initial active state visually
+    catBtns.forEach(function(btn) {
+      if (getCatValue(btn) === 'all') setActive(btn);
+      else setInactive(btn);
+    });
+    cityBtns.forEach(function(btn) {
+      if (getCityValue(btn) === 'all') setActive(btn);
+      else setInactive(btn);
+    });
+
     // Initial count
     runFilter();
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initAdvFilter);
+  // Use window.load to guarantee DOM + Zappy runtime are fully ready
+  function tryInit() {
+    var grid = document.getElementById('zappy-auto-grid-1778187311848-lzzcxz');
+    var catBtn = document.querySelector('.adv-filter-cat');
+    if (grid && catBtn) {
+      initAdvFilter();
+    } else {
+      setTimeout(tryInit, 200);
+    }
+  }
+
+  if (document.readyState === 'complete') {
+    tryInit();
   } else {
-    initAdvFilter();
+    window.addEventListener('load', tryInit);
   }
 })();
 </script>
