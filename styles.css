@@ -7936,6 +7936,18 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-showcase-section #showcaseAdvancedFilter #adv-filter-count {
   color: rgba(255,255,255,0.7) !important;
 }
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-scroll-row::after,
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-scroll-row::before {
+  display: none !important;
+  content: none !important;
+}
+
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group::after,
+.index-showcase-section #showcaseAdvancedFilter .adv-filter-group::before {
+  display: none !important;
+  content: none !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
