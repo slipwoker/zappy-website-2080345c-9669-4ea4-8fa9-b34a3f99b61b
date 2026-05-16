@@ -7068,6 +7068,51 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-contact-section .index-benefits-section__eyebrow {
   color: var(--secondary) !important;
 }
+
+.nav-menu .nav-mobile-social-row {
+  display: none;
+  list-style: none;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 0 8px;
+  border-top: 1px solid rgba(248,252,247,0.15);
+  margin-top: 8px;
+}
+
+.nav-menu.active .nav-mobile-social-row {
+  display: flex;
+}
+
+.nav-menu .nav-mobile-social-row a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(248,252,247,0.12);
+  color: var(--nav-text);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-menu .nav-mobile-social-row a:hover {
+  background: var(--primary);
+  color: var(--secondary-color);
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
