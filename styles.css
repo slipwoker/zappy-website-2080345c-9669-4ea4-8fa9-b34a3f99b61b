@@ -7644,6 +7644,33 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   display: grid !important;
 }
 }
+
+@media (max-width: 768px) {
+.index-showcase-section .job-card {
+  overflow: visible !important;
+  height: auto !important;
+  min-height: 0 !important;
+}
+
+.index-showcase-section .job-card-body {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+.index-showcase-section .job-card-footer {
+  overflow: visible !important;
+  height: auto !important;
+}
+
+.index-showcase-section .job-card-tags {
+  flex-wrap: wrap !important;
+}
+
+.index-showcase-section .showcase-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
+  align-items: start !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
