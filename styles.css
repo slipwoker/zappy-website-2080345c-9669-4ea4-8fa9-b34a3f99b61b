@@ -7541,6 +7541,16 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 .index-showcase-section .job-card {
   color: var(--background-color) !important;
 }
+
+#showcase .job-card .meta-item,
+#showcase .job-card .meta-item[style] {
+  color: var(--background-color) !important;
+}
+
+#showcase .job-card .job-card-title,
+#showcase .job-card .job-card-title[style] {
+  color: var(--background-color) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
