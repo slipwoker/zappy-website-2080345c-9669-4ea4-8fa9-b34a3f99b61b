@@ -7956,6 +7956,15 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   padding: 20px 24px !important;
   margin-bottom: 32px !important;
 }
+
+.index-showcase-section .job-card-title {
+  font-weight: 800 !important;
+}
+
+.index-showcase-section .adv-filter-group > p > span,
+.index-showcase-section .adv-filter-group > p span {
+  font-weight: 700 !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
