@@ -1172,18 +1172,15 @@
   
   <main>
     <section id="hero" class="index-hero-section" data-layout-spec="בית-hero" dir="rtl" data-hero-type="fullscreen-scrim">
+
   <!-- Background Image -->
   <div class="index-hero-bg">
-    <img data-hero-bg="true" data-placeholder="index-hero-image-1" data-context="Young energetic Israeli workers in a lively urban hospitality setting — baristas, café staff, and retail workers smiling and working together in a modern Tel Aviv café or restaurant. Warm ambient lighting, colorful urban environment, multicultural young adults aged 18-28. Lifestyle photography style, slightly desaturated with rich contrast, cinematic mood. Full-bleed background image for a recruitment brand." width="1200" height="700" src="/assets/site-index-hero-image-1-1778188332815-odk3ib.webp?v=1778188335302" alt="צעירים עובדים בבית קפה עירוני תוסס" data-hero-background="true" data-element-type="image" data-element-id="img-1778187311826-2phwcwij2" data-zappy-original-width="1686.363525390625" data-zappy-original-height="770" data-zappy-object-position="50% 50%" style="object-fit: cover !important; object-position: 50% 50% !important; margin-right: 0px !important; margin-left: 0px !important; display: block !important;" data-zappy-mobile-object-position="50% 50%" data-zappy-mobile-zoom="1.5" data-zappy-mobile-src="/assets/site-index-hero-image-1-1778246426739-ng2t9p.webp?v=1778246428959">
+    <img data-hero-bg="true" data-placeholder="index-hero-image-1" width="1200" height="700" src="/assets/site-index-hero-image-1-1778188332815-odk3ib.webp?v=1778188335302" alt="צעירים עובדים בבית קפה עירוני תוסס" data-hero-background="true" data-element-type="image" data-element-id="img-1778187311826-2phwcwij2" data-zappy-original-width="1686.363525390625" data-zappy-original-height="770" data-zappy-object-position="50% 50%" style="object-fit: cover !important; object-position: 50% 50% !important; display: block !important;" data-zappy-mobile-object-position="50% 50%" data-zappy-mobile-zoom="1.5" data-zappy-mobile-src="/assets/site-index-hero-image-1-1778246426739-ng2t9p.webp?v=1778246428959">
   </div>
 
-  <!-- Scrim Overlay -->
+  <!-- Multi-layer scrim for depth -->
   <div class="index-hero-scrim" aria-hidden="true"></div>
-
-  <!-- Film Grain Texture -->
   <div class="index-hero-grain" aria-hidden="true"></div>
-
-  <!-- Floating CSS Accent Shapes -->
   <div class="index-hero-accent-1" aria-hidden="true"></div>
   <div class="index-hero-accent-2" aria-hidden="true"></div>
 
@@ -1191,61 +1188,85 @@
   <div class="index-hero-container">
     <div class="index-hero-overlay-group">
 
-      <!-- Eyebrow Label -->
-      <p><span class="index-hero-eyebrow" style="color: #5BCB76; font-weight: 900; font-size: 1.1rem; text-shadow: 0 0 12px rgba(91,203,118,0.7), 0 0 24px rgba(91,203,118,0.4); letter-spacing: 0.1em; background: rgba(91,203,118,0.15); border: 1px solid rgba(91,203,118,0.5); padding: 7px 22px; border-radius: 100px">גיוס מהיר ואישי</span>
+      <!-- Eyebrow badge -->
+      <div class="index-hero-eyebrow-wrap">
+        <span class="index-hero-eyebrow">
+          <span class="eyebrow-dot"></span>
+          גיוס מהיר ואישי — מענה תוך שעות
+        </span>
+      </div>
 
-      </p><!-- H1 Headline -->
+      <!-- H1 Headline - bold & punchy -->
       <h1 class="index-hero-headline">
         מחפשים עבודה?<br>
-        <span class="index-hero-headline-accent" style="color: rgb(23, 32, 27) !important;">MATCHa Jobs - ההתאמה הנכונה</span><br>
-        מחברים אתכם למקום הבא
+        <span class="index-hero-headline-accent">MATCHa Jobs</span><br>
+        <span class="index-hero-headline-sub">ההתאמה הנכונה בשבילכם</span>
       </h1>
 
-      <!-- Brush-stroke underline decoration -->
-      <svg class="index-hero-brush" data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 220 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 9.5 C40 5, 90 12, 140 7.5 C170 5, 200 10, 217 8" stroke="#5BCB76" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"></path>
-        <path d="M8 11.5 C50 8, 110 13.5, 160 10 C185 8.5, 208 12, 218 10.5" stroke="#5BCB76" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.45"></path>
-      </svg>
+      <!-- Decorative underline -->
+      <div class="index-hero-underline-wrap" aria-hidden="true">
+        <svg class="index-hero-brush" viewBox="0 0 260 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 11 C55 5, 120 14, 185 8 C215 5, 248 11, 258 9" stroke="#5BCB76" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.95"/>
+          <path d="M10 13 C65 9, 135 15.5, 195 11 C225 9, 252 13, 259 11.5" stroke="#5BCB76" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+        </svg>
+      </div>
 
-      <!-- H3 Subtitle -->
-      <h3 class="index-hero-subtitle" >
-        משרות לצעירים, חיילים משוחררים, סטודנטים ובוגרים -<br class="index-hero-br"> בתי קפה, מסעדנות, שירות, קמעונאות ועוד.
-      </h3>
+      <!-- Subtitle -->
+      <p class="index-hero-subtitle">
+        צעירים, חיילים משוחררים, סטודנטים ובוגרים —<br class="index-hero-br">
+        בתי קפה, מסעדנות, קמעונאות, שירות ועוד.
+      </p>
 
-      <!-- CTA Buttons -->
+      <!-- CTA Buttons — big, mobile-first -->
       <div class="index-hero-ctas">
-        <a href="#showcase" class="index-hero-btn-primary" data-element-type="button" data-element-id="btn-1778187311820-c21mkypsn" data-native-element="true">
-          <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
-          למשרות פתוחות
-        </a>
-        <a href="https://wa.me/972503995540" class="index-hero-btn-primary" data-element-type="button" data-element-id="btn-1778187311820-xngm2auqr" data-native-element="true" target="_blank" rel="noopener">
+        <a href="https://wa.me/972503995540" class="index-hero-btn-wa" data-element-type="button" data-element-id="btn-1778187311820-xngm2auqr" data-native-element="true" target="_blank" rel="noopener">
           <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
           שלחו הודעה בוואטסאפ
         </a>
+        <a href="#showcase" class="index-hero-btn-ghost" data-element-type="button" data-element-id="btn-1778187311820-c21mkypsn" data-native-element="true">
+          <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+          למשרות פתוחות
+        </a>
       </div>
 
-      <!-- Trust Indicators -->
+      <!-- Social proof strip -->
+      <div class="index-hero-proof">
+        <div class="index-hero-proof-item">
+          <span class="proof-number">200+</span>
+          <span class="proof-label">מועמדים פעילים</span>
+        </div>
+        <div class="index-hero-proof-divider" aria-hidden="true"></div>
+        <div class="index-hero-proof-item">
+          <span class="proof-number">50+</span>
+          <span class="proof-label">עסקים שותפים</span>
+        </div>
+        <div class="index-hero-proof-divider" aria-hidden="true"></div>
+        <div class="index-hero-proof-item">
+          <span class="proof-number">72שע׳</span>
+          <span class="proof-label">ממוצע גיוס</span>
+        </div>
+      </div>
+
+      <!-- Trust chips row -->
       <div class="index-hero-trust">
-        <p class="zappy-editable"><a href="https://wa.me/972503995540" class="index-hero-trust-chip" style="text-decoration:none;color:inherit;" target="_blank" rel="noopener">
-          <i class="fab fa-whatsapp" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778246079305-yi4hz05tb" data-icon-type="fontawesome"></i>
-          <span>50+ עסקים שותפים</span>
-        </a>
-        </p><div class="index-hero-trust-divider" aria-hidden="true"></div>
+        <div class="index-hero-trust-chip">
+          <i class="fa-solid fa-check-circle" aria-hidden="true"></i>
+          <span>ליווי אישי</span>
+        </div>
         <div class="index-hero-trust-chip">
           <i class="fa-solid fa-rotate" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778187311824-a7a5xxes1" data-icon-type="fontawesome"></i>
           <span>משרות מתעדכנות</span>
         </div>
-        <div class="index-hero-trust-divider" aria-hidden="true"></div>
         <div class="index-hero-trust-chip">
-          <i class="fa-solid fa-user-tie" aria-hidden="true"></i>
-          <span>ליווי אישי</span>
+          <i class="fab fa-whatsapp" aria-hidden="true" data-element-type="icon" data-element-id="icon-1778246079305-yi4hz05tb" data-icon-type="fontawesome"></i>
+          <span>מענה בוואטסאפ</span>
         </div>
       </div>
 
     </div>
   </div>
 
-  <!-- Bottom Torn-Paper Divider -->
+  <!-- Bottom Divider -->
   <div class="index-hero-divider-wrapper">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1440 90" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,90 L0,52 Q18,44 36,52 T72,46 Q90,52 108,44 T144,50 Q162,44 180,52 T216,46 Q240,52 270,44 T324,50 Q348,44 378,52 T432,46 Q456,52 486,44 T540,50 Q564,44 594,52 T648,46 Q672,52 702,44 T756,50 Q780,44 810,52 T864,46 Q888,52 918,44 T972,50 Q996,44 1026,52 T1080,46 Q1104,52 1134,44 T1188,50 Q1212,44 1260,52 T1332,46 Q1368,52 1404,44 L1440,48 L1440,90 Z" fill="#EBF2EB"></path>
