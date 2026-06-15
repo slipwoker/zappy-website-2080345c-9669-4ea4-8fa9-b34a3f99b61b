@@ -161,26 +161,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -1458,6 +1463,7 @@
     'zappy-section-6':          ['kfar-saba'],
     'zappy-section-7':          ['petah-tikva'],
     'zappy-section-pizza':      ['raanana'],
+    'zappy-section-burger-einat': ['kfar-saba', 'other'],
     'zappy-section-cafe':       ['raanana', 'petah-tikva'],
     'zappy-section-schnitzel':  ['petah-tikva', 'tel-aviv', 'herzliya'],
     'zappy-section-rothschild': ['tel-aviv'],
@@ -1863,7 +1869,28 @@
           <a href="https://wa.me/972503995540?text=היי%20אשמח%20לשמוע%20פרטים%20נוספים%20על%20המשרה%20עובד%20דלפק%20%E2%80%93%20חנות%20מאפים%20ועוגות%20תל%20אביב" class="btn-job-cta-new">אני רוצה לעבוד בחנות המאפים!</a>
         </div>
       </article>
-      <article class="job-card" id="zappy-section-cafe" data-grid-item-index="12" data-category="cafe" style="transform: none;">
+      <article class="job-card" id="zappy-section-burger-einat" data-grid-item-index="12" data-category="restaurant">
+        <div class="job-card-image-wrap" data-zappy-mobile-bleed="1" style="margin-left: -10px !important; margin-right: -10px !important; margin-top: -12px !important; width: calc(100% + 20px) !important; max-width: calc(100% + 20px) !important;">
+          <img width="600" height="400" src="/assets/site-index-showcase-image-5-1778198633720-zy7nez.webp?v=1778198633720" alt="טבח במטבח רשת המבורגרים">
+        </div>
+        <div class="job-card-body">
+          <h3 class="job-card-title">טבחים – רשת המבורגרים מוכרת | כפר סבא וקיבוץ עינת</h3>
+          <div class="job-card-meta">
+            <span class="meta-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>כפר סבא (מתחם G) וקיבוץ עינת</span>
+            <span class="meta-item"><i class="fas fa-utensils" aria-hidden="true"></i> עבודה על פלאנצ'ה, גריל והכנת מנות</span>
+            <span class="meta-item"><i class="fas fa-clock" aria-hidden="true"></i> משמרות גמישות</span>
+          </div>
+          <div class="job-card-tags">
+            <span class="tag tag-green">עדיפות לניסיון – לא חובה</span>
+            <span class="tag tag-coral">סביבת עבודה צעירה ומשפחתית</span>
+            <span class="tag tag-periwinkle">אפשרויות קידום למתאימים</span>
+          </div>
+        </div>
+        <div class="job-card-footer">
+          <a href="https://wa.me/972503995540?text=היי%20אשמח%20לשמוע%20פרטים%20נוספים%20על%20המשרה%20טבחים%20%E2%80%93%20רשת%20המבורגרים%20מוכרת%20כפר%20סבא%20וקיבוץ%20עינת" class="btn-job-cta-new">אני רוצה לעבוד כטבח ברשת ההמבורגרים!</a>
+        </div>
+      </article>
+      <article class="job-card" id="zappy-section-cafe" data-grid-item-index="13" data-category="cafe" style="transform: none;">
         <div class="job-card-image-wrap" data-zappy-mobile-bleed="1" style="margin-left: -10px !important; margin-right: -10px !important; margin-top: -12px !important; width: calc(100% + 20px) !important; max-width: calc(100% + 20px) !important;">
           <img width="600" height="400" src="/assets/site-index-showcase-image-5-1778198633720-zy7nez.webp?v=1778198633720" alt="בריסטה ועובדי קפה ברעננה" data-element-id="img-showcase-cafe-raanana">
         </div>
