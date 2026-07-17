@@ -7975,6 +7975,17 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
   transform: none !important;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10) !important;
 }
+
+#zappy-section-gift-seamstress,
+#zappy-section-gift-print {
+  transform: none !important;
+}
+
+#zappy-section-gift-seamstress:hover,
+#zappy-section-gift-print:hover {
+  transform: none !important;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.10) !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
