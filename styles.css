@@ -8049,6 +8049,29 @@ body {
 }
 /* /Zappy custom logo size */
 
+
+#hero .index-hero-logo-wall {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  max-width: 70%;
+  opacity: 0.12;
+  pointer-events: none;
+  z-index: 2;
+  filter: brightness(0.4);
+}
+
+@media (max-width: 768px) {
+#hero .index-hero-logo-wall {
+  width: 220px;
+  opacity: 0.10;
+}
+}
+/* zappy-self-heal */
+#hero .index-hero-logo-wall { width: 320px !important; }
+
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
