@@ -7990,6 +7990,13 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 body {
   padding-top: 0px !important;
 }
+
+#hero .index-hero-trust p {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
