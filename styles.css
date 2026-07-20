@@ -7990,6 +7990,26 @@ div[id*="mic-access-tool-box"] button[class*="reset"] * {
 body {
   padding-top: 0px !important;
 }
+
+@media (max-width: 768px) {
+.index-hero-section {
+  min-height: 100svh !important;
+  padding-top: 100px !important;
+  padding-bottom: 40px !important;
+}
+
+.index-hero-section .index-hero-headline {
+  font-size: 1.8rem !important;
+}
+
+.index-hero-section .index-hero-subtitle {
+  font-size: 0.95rem !important;
+}
+
+.index-hero-section .index-hero-scrim {
+  background-image: linear-gradient(170deg, rgba(23,32,27,0.25) 0%, rgba(23,32,27,0.5) 35%, rgba(23,32,27,0.85) 70%, rgba(23,32,27,0.95) 100%) !important;
+}
+}
 /* mobile-submenu-overflow-fix */
 @media (max-width: 768px) {
   .navbar .sub-menu.mobile-expanded,
