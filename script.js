@@ -2053,6 +2053,35 @@ window.onload = function() {
   } catch (e) {}
 })();
 
+/* ZAPPY_CUSTOM_JS_START:c0430a79191d */
+(function () {
+  function __zappyCustomInit() {
+    try {
+(function() {
+  var el = document.body;
+  if (!el) return;
+  // Zero-out padding-top after the navbar script sets it
+  el.style.setProperty('padding-top', '0px', 'important');
+  // Also watch for changes (in case script re-applies later)
+  var observer = new MutationObserver(function() {
+    if (el.style.paddingTop !== '0px') {
+      el.style.setProperty('padding-top', '0px', 'important');
+    }
+  });
+  observer.observe(el, { attributes: true, attributeFilter: ['style'] });
+})();
+    } catch (e) {
+      if (typeof console !== 'undefined' && console.warn) { console.warn('[zappy-custom-js]', e); }
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', __zappyCustomInit);
+  } else {
+    __zappyCustomInit();
+  }
+})();
+/* ZAPPY_CUSTOM_JS_END:c0430a79191d */
+
 
 /* ZAPPY_PUBLISHED_LIGHTBOX_RUNTIME */
 (function(){
